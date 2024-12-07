@@ -10,5 +10,8 @@
 			"groupSlug": "all-dependencies",
 			"matchPackagePatterns": ["*"]
 		}
-	]
+	],
+	"lockFileMaintenance": {
+		"enabled": true
+	}
 }
