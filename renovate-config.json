@@ -13,6 +13,6 @@
 	],
 	"lockFileMaintenance": {
 		"enabled": true,
-		"schedule": ["* 0-3 1 * *"]
+		"schedule": ["* * 1 * *"]
 	}
 }
