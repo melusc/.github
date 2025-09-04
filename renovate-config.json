@@ -1,8 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:recommended", "helpers:pinGitHubActionDigests", ":semanticCommitTypeAll(chore)"],
+	"extends": [
+		"config:recommended",
+		"helpers:pinGitHubActionDigests",
+		":semanticCommitTypeAll(chore)"
+	],
 	"rangeStrategy": "bump",
-	"postUpdateOptions": ["yarnDedupeHighest"],
+	"postUpdateOptions": ["yarnDedupeHighest", "pnpmDedupe"],
 	"schedule": ["at any time"],
 	"packageRules": [
 		{
