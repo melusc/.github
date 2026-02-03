@@ -2,7 +2,9 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		"config:recommended",
-		"helpers:pinGitHubActionDigests",
+		":configMigration",
+		":pinDevDependencies",
+		"security:minimumReleaseAgeNpm",
 		":semanticCommitTypeAll(chore)"
 	],
 	"rangeStrategy": "bump",
@@ -13,7 +15,8 @@
 			"groupName": "All dependencies",
 			"groupSlug": "all-dependencies",
 			"matchPackagePatterns": ["*"],
-			"matchUpdateTypes": ["minor", "patch"]
+			"matchUpdateTypes": ["minor", "patch"],
+			"pinDigests": true
 		}
 	],
 	"lockFileMaintenance": {
