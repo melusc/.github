@@ -15,7 +15,14 @@
 			"groupName": "All dependencies",
 			"groupSlug": "all-dependencies",
 			"matchPackagePatterns": ["*"],
+			"matchUpdateTypes": ["minor", "patch"]
+		},
+		{
+			"groupName": "Github Actions",
+			"groupSlug": "github-actions",
+			"matchPackageNames": ["*"],
 			"matchUpdateTypes": ["minor", "patch"],
+			"matchDepTypes": ["action"],
 			"pinDigests": true
 		}
 	],
