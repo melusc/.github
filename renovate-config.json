@@ -7,7 +7,7 @@
 		":semanticCommitTypeAll(chore)"
 	],
 	"rangeStrategy": "bump",
-	"postUpdateOptions": ["yarnDedupeHighest", "pnpmDedupe"],
+	"postUpdateOptions": ["pnpmDedupe"],
 	"schedule": ["at any time"],
 	"packageRules": [
 		{
@@ -15,18 +15,7 @@
 			"groupSlug": "all-dependencies",
 			"matchPackagePatterns": ["*"],
 			"matchUpdateTypes": ["minor", "patch"]
-		},
-		{
-			"groupName": "Github Actions",
-			"groupSlug": "github-actions",
-			"matchPackageNames": ["*"],
-			"matchUpdateTypes": ["minor", "patch"],
-			"matchDepTypes": ["action"],
 			"pinDigests": true
 		}
-	],
-	"lockFileMaintenance": {
-		"enabled": true,
-		"schedule": ["* 0-3 1 * *"]
-	}
+	]
 }
