@@ -14,7 +14,7 @@
 			"groupName": "All dependencies",
 			"groupSlug": "all-dependencies",
 			"matchPackagePatterns": ["*"],
-			"matchUpdateTypes": ["minor", "patch"]
+			"matchUpdateTypes": ["minor", "patch"],
 			"pinDigests": true
 		}
 	]
