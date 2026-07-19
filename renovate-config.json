@@ -3,7 +3,6 @@
 	"extends": [
 		"config:recommended",
 		":configMigration",
-		"security:minimumReleaseAgeNpm",
 		":semanticCommitTypeAll(chore)"
 	],
 	"rangeStrategy": "bump",
@@ -15,7 +14,8 @@
 			"groupSlug": "all-dependencies",
 			"matchPackagePatterns": ["*"],
 			"matchUpdateTypes": ["minor", "patch"],
-			"pinDigests": true
+			"pinDigests": true,
+			"minimumReleaseAge": "3 days"
 		}
 	]
 }
