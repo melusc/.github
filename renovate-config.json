@@ -8,14 +8,14 @@
 	"rangeStrategy": "bump",
 	"postUpdateOptions": ["pnpmDedupe"],
 	"schedule": ["at any time"],
+	"pinDigests": true,
+	"minimumReleaseAge": "3 days",
 	"packageRules": [
 		{
 			"groupName": "All dependencies",
 			"groupSlug": "all-dependencies",
-			"matchPackagePatterns": ["*"],
-			"matchUpdateTypes": ["minor", "patch"],
-			"pinDigests": true,
-			"minimumReleaseAge": "3 days"
+			"matchPackageNames": ["*"],
+			"matchUpdateTypes": ["minor", "patch"]
 		}
 	]
 }
