@@ -12,6 +12,10 @@
 	"minimumReleaseAge": "3 days",
 	"packageRules": [
 		{
+			"matchPackageNames": ["typescript"],
+			"allowedVersions": "<7.0.0"
+		},
+		{
 			"groupName": "All dependencies",
 			"groupSlug": "all-dependencies",
 			"matchPackageNames": ["*"],
